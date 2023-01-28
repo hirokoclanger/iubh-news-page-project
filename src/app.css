@@ -67,7 +67,7 @@ button:active, button:visited{
 
 .all__news {
   margin: 50px auto;
-  min-width: 100%;
+ 
   display: flex;
   flex:content;
   flex-wrap: wrap;
@@ -75,7 +75,7 @@ button:active, button:visited{
 }
 
 .news {
-  max-width: 525px;
+  max-width: 360px;
   padding: 30px;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -139,10 +139,7 @@ button:active, button:visited{
     gap: 10px;
     font-size: 15px;
   }
-  .news{
-    min-width: 100%;
 
-  }
 }
 
 
@@ -156,18 +153,30 @@ button:active, button:visited{
 
 }
 
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 960px) {
 
   .news{
-    min-width: 100%;
+    max-width: 100%;
 
   }
 
 }
-@media only screen and (min-width: 30%) {
+
+@media only screen and (min-width: 960px) {
 
   .news{
-    min-width: 49%;
+    max-width: 49%;
+
+  }
+
+}
+
+
+@media only screen and (min-width: 1660px) {
+
+  .news{
+    max-width: 32%;
+
   }
 
 }
