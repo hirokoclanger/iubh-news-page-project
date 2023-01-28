@@ -9,6 +9,14 @@ export const NewsContextProvider = (props) => {
   const [category, setCategory] = useState('Business');
   const [region, setRegion] = useState('US');
   const apiKey = "a9f9dc72ca3f42da874a9299ebdd19d7";
+  const [search, setSearch] = useState();
+
+  // Update the search when a then searchbar recieves an input
+  function updateSearch(e){
+    const item = e.target.value;
+    setSearch(item);
+    setCategory();
+  }
 
   // Update the Category by selecting the value of from the current Button Item
   function updateCategory(e){
@@ -24,6 +32,17 @@ export const NewsContextProvider = (props) => {
 
   // generate a asynchronous request with the current selecten category and the given apiKey
   // try the connection and return the response as a data object, else return error to the console
+  
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://newsapi.org/v2/everything?q=${search}&from=2023-01-28&sortBy=popularity&apiKey=${apiKey}`
+      )
+      .then((response) => setData(response.data))
+      .catch((error) => console.log(error));
+  }, [search, category]);
+ 
   useEffect(() => {
     axios
       .get(
@@ -32,23 +51,15 @@ export const NewsContextProvider = (props) => {
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, [category, region]);
-
+  
   return (
   
     <section> 
+    <div className="searchbar">
+        <input type="text" placeholder="Search for news headlines" onChange={updateSearch} value={search} />
+    </div>
     <div className="category-wrapper"> 
-      <div className="region-selection" >
-          <select onChange={updateRegion}>
-            <option value="US">United States</option>
-            <option value="DE">Germany</option>
-            <option value="JP">Japan</option>
-            <option value="CN">China</option>
-            <option value="FR">Frances</option>
-            <option value="GB">Great Britain</option>
-            <option value="SK">Sweden</option>
-            <option value="PL">Poland</option>
-          </select>
-        </div>
+   
         <div className="category-selection">
           <ul>
             <button value="General" onClick={updateCategory}>General</button>
@@ -60,8 +71,30 @@ export const NewsContextProvider = (props) => {
             <button value="Technology" onClick={updateCategory}>Technology</button>
           </ul>
         </div>
+        
     </div>
-    <NewsContext.Provider value={{ data, category, region }} >
+    <div className="current-category-region">
+      <div className="current-category-region__left">
+          <h1  className="head__text">{category}</h1>
+          <h1 className="head__text">{search}</h1>
+       </div>
+       <div className="current-category-region__right">
+       <div className="region-selection" >
+          <select onChange={updateRegion}>
+            <option value="US">United States</option>
+            <option value="DE">Germany</option>
+            <option value="JP">Japan</option>
+            <option value="CN">China</option>
+            <option value="FR">France</option>
+            <option value="GB">Great Britain</option>
+            <option value="SK">Sweden</option>
+            <option value="PL">Poland</option>
+          </select>
+        </div>
+       </div>
+    </div>
+  
+    <NewsContext.Provider value={{ data}} className="newscontext" >
       {props.children}
     </NewsContext.Provider>
     </section>

@@ -3,11 +3,9 @@ import { NewsContext } from "../NewsContext";
 import NewsArticle from "./NewsArticle";
 
 function News(props) {
-  const { data, category} = useContext(NewsContext);
-
+  const { data} = useContext(NewsContext);
   return (
     <div className="news_wrapper">
-      <h1 className="head__text">{category}</h1>
       <div className="all__news">
         {data
           ? data.articles.map((news) => (
