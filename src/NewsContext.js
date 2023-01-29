@@ -16,7 +16,8 @@ export const NewsContextProvider = (props) => {
     const [data, setData] = useState();
     const [category, setCategory] = useState('Business');
     const [region, setRegion] = useState('US');
-    const apiKey = "a9f9dc72ca3f42da874a9299ebdd19d7";
+    //const apiKey = "a9f9dc72ca3f42da874a9299ebdd19d7";
+    const apiKey = "466d1f07b9ce43b78ba07f0b32017bf1";
     const [search, setSearch] = useState();
 
 
@@ -89,7 +90,6 @@ export const NewsContextProvider = (props) => {
             <div className="current_category_region">
                 <div className="current-category-region__left">
                     <h1 className="head__text">{category}</h1>
-                    <h1 className="head__text">{search}</h1>
                 </div>
                 <div className="current_category_region__right">
                     <div className="region__selection" >
