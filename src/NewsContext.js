@@ -12,7 +12,7 @@ export const NewsContextProvider = (props) => {
     const apiKey = "a9f9dc72ca3f42da874a9299ebdd19d7";
     const [search, setSearch] = useState();
 
-   
+
     // Update the search when a then searchbar recieves an input
     function updateSearch(e) {
         const item = e.target.value;
@@ -27,7 +27,7 @@ export const NewsContextProvider = (props) => {
         setCategory(item);
         setSearch();
     }
-  
+
     // Update the Region by selecting the value of from the current Button Item
     function updateRegion(e) {
         const reg = e.target.value;

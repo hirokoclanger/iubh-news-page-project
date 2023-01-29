@@ -2,12 +2,9 @@
 
 ## Install instructions
 
-# Install date-fns for npm
+### 1. Install date-fns for npm
 
 ### npm install date-fns
 
-
-In the project directory, you can run:
-
-### `npm start`
+### 2. Run the project using `npm start`
 
