@@ -4,7 +4,9 @@
 
 ### 1. Install date-fns for npm
 
-### npm install date-fns
+#### `npm install date-fns`
 
-### 2. Run the project using `npm start`
+### 2. Run the project using 
+
+#### `npm start`
 
