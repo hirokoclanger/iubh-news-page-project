@@ -1,5 +1,5 @@
 
-
+// Returns the Title bar with the logo and the webapp name
 export default function  TitleBar(){
     return(
         <div className="titlebar">

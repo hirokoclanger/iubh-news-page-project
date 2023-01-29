@@ -1,4 +1,8 @@
 import React from "react";
+
+// Display the data of the given element from the dataset
+// Provides a Link to go to the articles and short description with the source
+// provided from the newsapi
 function NewsArticle({ data }) {
     return (
         <div className="news">

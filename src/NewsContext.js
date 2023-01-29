@@ -1,11 +1,18 @@
 import React, { createContext, useEffect, useState } from "react";
 import { format } from "date-fns";
 import axios from "axios";
-export const NewsContext = createContext();
+// This app requests the current top headlines of current news from variouse selectable region
+// displayes them in a grid view in a responsive way. In additioin, a user can search for the latest
+// news from a current topic at the current date
 
+// Generate a grid view filled with news articles previews that willl show the headline, sources and 
+// a short description . The call will be done asyncronosly via HTTP Requests
+
+export const NewsContext = createContext();
 export const NewsContextProvider = (props) => {
 
-    //Generate a new state for the current data and set a default value for the category
+    //Generate a new state for the current data and set  and default values for
+    // category, region and the searchbar
     const [data, setData] = useState();
     const [category, setCategory] = useState('Business');
     const [region, setRegion] = useState('US');
@@ -14,6 +21,7 @@ export const NewsContextProvider = (props) => {
 
 
     // Update the search when a then searchbar recieves an input
+    // and default back to Business Category if the searchbar is empty
     function updateSearch(e) {
         const item = e.target.value;
         setSearch(item);
@@ -58,7 +66,8 @@ export const NewsContextProvider = (props) => {
             .then((response) => setData(response.data))
             .catch((error) => console.log(error));
     }, [category, region]);
-
+    
+    // Displayes the grid view of news articles, with a searchbar, region selection and the category selection
     return (
         <section>
             <div className="searchbar">
