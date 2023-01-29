@@ -16,8 +16,7 @@ export const NewsContextProvider = (props) => {
     const [data, setData] = useState();
     const [category, setCategory] = useState('Business');
     const [region, setRegion] = useState('US');
-    //const apiKey = "a9f9dc72ca3f42da874a9299ebdd19d7";
-    const apiKey = "466d1f07b9ce43b78ba07f0b32017bf1";
+    const apiKey = "de8112e60a8e45019a5d0683f8c2ab6e";
     const [search, setSearch] = useState();
 
 
