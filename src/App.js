@@ -1,5 +1,3 @@
-import React, { createContext, useEffect, useState } from "react";
-
 import { NewsContextProvider } from "./NewsContext";
 import News from "./components/News";
 import TitleBar from "./components/TitleBar";
