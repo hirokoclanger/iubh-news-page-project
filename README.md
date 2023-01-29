@@ -34,7 +34,11 @@ Run this command in the commandline:
 
 `npm install date-fns`
 
-### 2. Run the project using 
+### 2. Run NPM Install
+
+ `npm install`
+
+### 3. Run the project using 
 
  `npm start`
 
