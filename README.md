@@ -54,14 +54,6 @@ Further installation documenation on NodeJS/npm can be found on:
     https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 
-# Register for a free NewsApi api key
-
-## 1. Go to https://www.newsapi.org/
-
-## 2.  Signup for free
-
-## 3. Place your api key into App.js
-
 # Install instructions for the IUBH News Page Project
 
 ## 1. Install date-fns for npm
