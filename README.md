@@ -11,6 +11,8 @@
 
 ## 2.  Signup for free and recieve your apiKey
 
+![Sign up for api key at newsapi.org](https://github.com/hirokoclanger/iubh-news-page-project/blob/4637411e64eaedd238e72f69bfd055d1e1e9cfa3/docs_phase3/Signup.png)
+
 ## 3. Place your api key into src/NewsContent.js
     
     const apiKey = "your api key goes here";
