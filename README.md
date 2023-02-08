@@ -15,9 +15,9 @@
     
     const apiKey = "your api key goes here";
 
-![Navigate to src directory](http://url/to/img.png)    
+![Navigate to src directory](https://github.com/hirokoclanger/iubh-news-page-project/blob/145362880a470dea191e491fbf2ca7456d70ee05/docs_phase3/Navigatetosrc.png)    
 
-![Place Api key into NewsContent.js and save the file](http://url/to/img.png)
+![Place Api key into NewsContent.js and save the file](https://github.com/hirokoclanger/iubh-news-page-project/blob/145362880a470dea191e491fbf2ca7456d70ee05/docs_phase3/PlaceApiKey.png)
 
 ## Windows pre installation 
 ---
