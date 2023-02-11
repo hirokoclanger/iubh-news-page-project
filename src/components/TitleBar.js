@@ -6,7 +6,7 @@ export default function  TitleBar(){
             <div className="titlebar__logo">
                 <img src="../logo.gif" alt="logo" height={130}/>
             </div>
-            <h1>IUBH News Page Project </h1>
+            <h1>IUBH News Page Project</h1>
         </div>
     )
 }

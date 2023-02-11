@@ -76,7 +76,7 @@ export const NewsContextProvider = (props) => {
             <div className="category_wrapper">
                 <div className="category__selection">
                     <ul>
-                        <button value="General" onClick={updateCategory}>General</button>
+                        <button value="General" onClick={(value) => updateCategory(value)}>General</button>
                         <button value="Science" onClick={updateCategory}>Science</button>
                         <button value="Entertainment" onClick={updateCategory}>Entertainment</button>
                         <button value="Business" onClick={updateCategory}>Business</button>
