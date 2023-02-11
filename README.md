@@ -5,15 +5,15 @@
 
 ## Register for a free NewsApi api key
 ---
-## 1. Go to 
+### 1. Go to 
     
     https://www.newsapi.org/
 
-## 2.  Signup for free and recieve your apiKey
+### 2.  Signup for free and recieve your apiKey
 
 ![Sign up for api key at newsapi.org](https://github.com/hirokoclanger/iubh-news-page-project/blob/4637411e64eaedd238e72f69bfd055d1e1e9cfa3/docs_phase3/Signup.png)
 
-## 3. Place your api key into src/NewsContent.js
+### 3. Place your api key into src/NewsContent.js
     
     const apiKey = "your api key goes here";
 
@@ -56,26 +56,29 @@ Further installation documenation on NodeJS/npm can be found on:
 
 # Install instructions for the IUBH News Page Project
 
-## 1. Install date-fns for npm
+### 1. Clone the Project
+    git clone git@github.com:hirokoclanger/iubh-news-page-project.git
+
+### 2. Install date-fns for npm
 
 ### Run this command in the commandline:
     npm install date-fns
 
-### 2. Run NPM Install
+### 3. Run NPM Install
     npm install
 
-### 3. Run the project using 
+### 4. Run the project using 
     npm start
 
 # Testing instruction
 
-## 1. Run NPM install 
+### 1. Run NPM install 
     npm install
 
-## 2. Run test suite
+### 2. Run test suite
     npm test
 
-## 3. Select 'a' from the menu to run all test 
+### 3. Select 'a' from the menu to run all test 
 
 ![Select "a" to run all test](https://github.com/hirokoclanger/iubh-news-page-project/blob/784e20a9d7b92ccdd6a7fb796a7bd73fa3c6fed8/docs_phase3/Selecttest.png)
 ![Finished tests](https://github.com/hirokoclanger/iubh-news-page-project/blob/ed75a7aa54b5b26eaad65fd4daa714b85817be88/docs_phase3/tests.png)
