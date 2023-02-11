@@ -67,4 +67,12 @@ Further installation documenation on NodeJS/npm can be found on:
 ### 3. Run the project using 
     npm start
 
+# Testing instruction
 
+## 1. Run NPM install 
+    npm install
+
+## 2. Run test suite
+    npm test
+
+![Finished tests](https://github.com/hirokoclanger/iubh-news-page-project/blob/ed75a7aa54b5b26eaad65fd4daa714b85817be88/docs_phase3/tests.png)
