@@ -75,4 +75,7 @@ Further installation documenation on NodeJS/npm can be found on:
 ## 2. Run test suite
     npm test
 
+## 3. Select 'a' from the menu to run all test 
+
+![Select "a" to run all test](https://github.com/hirokoclanger/iubh-news-page-project/blob/784e20a9d7b92ccdd6a7fb796a7bd73fa3c6fed8/docs_phase3/Selecttest.png)
 ![Finished tests](https://github.com/hirokoclanger/iubh-news-page-project/blob/ed75a7aa54b5b26eaad65fd4daa714b85817be88/docs_phase3/tests.png)
