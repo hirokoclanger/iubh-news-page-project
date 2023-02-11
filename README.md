@@ -1,6 +1,6 @@
 # IUBH News Pages Project 
 ---
-![]()
+![](https://github.com/hirokoclanger/iubh-news-page-project/blob/8b124dc5891fad39673e5fa3aa188d117e221070/docs_phase3/Intro.png)
 ---
 # Requirements and Installation
 
