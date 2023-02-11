@@ -1,7 +1,8 @@
 # IUBH News Pages Project 
-
+---
+![]()
+---
 # Requirements and Installation
-
 
 ## Register for a free NewsApi api key
 ---
